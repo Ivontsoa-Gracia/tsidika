@@ -33,5 +33,4 @@ Route::get('/blog', [PageController::class, 'blog']);
 Route::get('/about', [PageController::class, 'about']);
 Route::get('/admin', [PageController::class, 'backoffice'])->middleware('auth');
 
-
 require __DIR__.'/auth.php';
