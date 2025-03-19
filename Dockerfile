@@ -32,6 +32,9 @@ RUN npm install
 # Compiler les assets front-end avec Vite
 RUN npm run build
 
+# Exécuter les migrations Laravel
+RUN php artisan migrate --force
+
 # Changer les permissions pour les dossiers nécessaires
 RUN chown -R www-data:www-data /var/www/html \
     && chmod -R 755 /var/www/html/storage \
