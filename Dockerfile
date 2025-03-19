@@ -7,15 +7,13 @@ RUN apt-get update && apt-get install -y \
     curl \
     git \
     libpq-dev \
-    nodejs \
-    npm \
     && docker-php-ext-install pdo pdo_pgsql
 
 # Copier Composer depuis l'image Composer officielle
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
-# Installer les dépendances front-end (Node.js, npm, etc.)
-RUN curl -sL https://deb.nodesource.com/setup_16.x | bash - \
+# Installer Node.js 20.x et npm
+RUN curl -sL https://deb.nodesource.com/setup_20.x | bash - \
     && apt-get install -y nodejs \
     && npm install -g npm@latest
 
