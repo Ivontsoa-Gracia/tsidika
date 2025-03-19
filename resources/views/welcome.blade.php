@@ -104,6 +104,15 @@
             background-color: #d12a1a;
         }
     </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-Y"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-QS745G6X9G'); // Remplacez par votre ID Google Analytics
+    </script>
 </head>
 <body>
 
