@@ -3,7 +3,77 @@
 @section('title', 'Tsidika Travel - Blog')
 
 @section('content')
-<link rel="stylesheet" href="{{ asset('css/blog.css') }}">
+<style>
+    /* Style général de la page */
+    .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+        font-family: 'Arial', sans-serif;
+        background-color: #f8f8f8;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Style pour le titre principal */
+    h1 {
+        font-size: 2.5em;
+        color: #333;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    /* Style pour les paragraphes */
+    p {
+        font-size: 1.1em;
+        color: #666;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    /* Style pour la section destination */
+    .destination {
+        font-size: 1.4em;
+        font-weight: bold;
+        color: #222831;
+        text-align: center;
+        background-color: #c99383;
+        padding: 15px;
+        border-radius: 8px;
+        margin: 20px 0;
+        color: white;
+    }
+
+    /* Style pour les articles */
+    .article {
+        background-color: #ffffff;
+        padding: 15px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .article h2 {
+        font-size: 1.8em;
+        color: #222831;
+        margin-bottom: 10px;
+    }
+
+    .article p {
+        font-size: 1em;
+        color: #555;
+        margin-bottom: 10px;
+    }
+
+    /* Style pour le footer */
+    .footer {
+        text-align: center;
+        font-size: 1em;
+        color: #888;
+        margin-top: 30px;
+        padding: 10px;
+    }
+</style>
 
 <div class="container">
     <h1>Bienvenue sur Tsidika Travel</h1>
