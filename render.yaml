@@ -2,7 +2,7 @@ services:
   - type: web
     name: vroom-laravel
     env: docker
-    repo: https://github.com/Ivontsoa-Gracia/mini-projet.git
+    repo: https://github.com/Ivontsoa-Gracia/tsidika.git
     dockerfilePath: ./Dockerfile
     envVars:
       - key: APP_ENV
